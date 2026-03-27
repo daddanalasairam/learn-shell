@@ -94,10 +94,15 @@ systemctl stop nginx
 systemctl restart nginx
 systemctl status nginx
 #to check connectivity
-ping google.com
+ping <IP>
 #to send a request to a website
-curl google.com
+curl <IP>>
 #show only headers "-I" fetches HTTP headers only
-curl -I google.com
+curl -I <host>
 #to check dns
-nslookup google.com
+nslookup <host>
+#check open ports
+netstat -tulnp
+ss -tulnp
+#Checks if your server can connect to another server on a specific port.
+telnet <IP> <port>

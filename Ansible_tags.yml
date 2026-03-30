@@ -13,3 +13,4 @@
         msg: Started Nginx
       tasks:
         - service
+        - systemd
